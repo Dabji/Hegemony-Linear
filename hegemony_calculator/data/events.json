@@ -1,0 +1,13 @@
+[
+  {"name": "Crisis Alimentaria", "effect": "La comida importada sube de precio durante una ronda."},
+  {"name": "Boom Exportador", "effect": "Las empresas privadas producen un recurso extra."},
+  {"name": "Marcha Nacional", "effect": "La Clase Trabajadora gana influencia si su prosperidad es baja."},
+  {"name": "Escandalo Fiscal", "effect": "El Estado pierde legitimidad si los impuestos son altos."},
+  {"name": "Innovacion Educativa", "effect": "La educacion mejora un obrero adicional."},
+  {"name": "Pandemia Local", "effect": "La salud se vuelve prioridad electoral."},
+  {"name": "Huelga Sectorial", "effect": "Una industria no produce si no se atiende la demanda."},
+  {"name": "Nuevo Mercado", "effect": "El lujo baja de precio si comercio exterior esta abierto."},
+  {"name": "Reforma Laboral", "effect": "Mercado Laboral se vuelve la politica de mayor conflicto."},
+  {"name": "Pacto Social", "effect": "Todos ganan 1 influencia y se vota una ley inmediatamente."}
+]
+

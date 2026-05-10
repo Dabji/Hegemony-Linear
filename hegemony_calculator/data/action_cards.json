@@ -1,0 +1,23 @@
+[
+  {"class": "Working Class", "name": "Sindicatos de Industria", "effect": "Si hay 4+ obreros en una industria, gana influencia y PV."},
+  {"class": "Working Class", "name": "Huelga General", "effect": "Gana influencia y presiona el salario minimo."},
+  {"class": "Working Class", "name": "Asamblea Barrial", "effect": "Convierte comida cubierta en apoyo electoral."},
+  {"class": "Working Class", "name": "Educacion Popular", "effect": "Mejora un obrero si se compra educacion."},
+  {"class": "Working Class", "name": "Mutual de Salud", "effect": "Reduce el costo efectivo de salud esta ronda."},
+  {"class": "Middle Class", "name": "Pequeno Negocio", "effect": "Abre una empresa media con dos slots."},
+  {"class": "Middle Class", "name": "Credito Local", "effect": "Gana Vardis ahora, paga interes en preparacion."},
+  {"class": "Middle Class", "name": "Coalicion Moderada", "effect": "Suma votos a una ley mixta."},
+  {"class": "Middle Class", "name": "Oferta de Consumo", "effect": "Produce lujo si hay obreros empleados."},
+  {"class": "Middle Class", "name": "Capacitacion", "effect": "Aumenta valor de trabajadores calificados."},
+  {"class": "Capitalist Class", "name": "Inversion Extranjera", "effect": "Gana capital para construir empresas."},
+  {"class": "Capitalist Class", "name": "Lobbying", "effect": "Gasta influencia para bloquear impuestos."},
+  {"class": "Capitalist Class", "name": "Automatizacion", "effect": "Produce mas con menos obreros."},
+  {"class": "Capitalist Class", "name": "Bajar Salarios", "effect": "Presiona Mercado Laboral hacia L1."},
+  {"class": "Capitalist Class", "name": "Expansion Industrial", "effect": "Agrega slots al sector privado."},
+  {"class": "The State", "name": "Subsidio de Salud", "effect": "Reduce precio de salud publica."},
+  {"class": "The State", "name": "Escuela Nacional", "effect": "Reduce precio de educacion publica."},
+  {"class": "The State", "name": "Impuesto Progresivo", "effect": "Mueve Tributacion hacia mayor carga capitalista."},
+  {"class": "The State", "name": "Orden Publico", "effect": "Recupera legitimidad si hay huelgas."},
+  {"class": "The State", "name": "Plan de Empleo", "effect": "Abre cupos en empresas publicas."}
+]
+

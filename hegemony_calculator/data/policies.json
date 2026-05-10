@@ -1,0 +1,10 @@
+[
+  {"key": "fiscal", "name": "Politica Fiscal", "A": "Sector publico amplio", "B": "Sector mixto", "C": "Sector publico pequeno"},
+  {"key": "labor_market", "name": "Mercado Laboral", "A": "Salario L1", "B": "Salario L2", "C": "Salario L3"},
+  {"key": "taxation", "name": "Tributacion", "A": "Carga alta", "B": "Carga media", "C": "Carga baja"},
+  {"key": "public_health", "name": "Bienestar Salud", "A": "Salud publica gratuita", "B": "Salud publica 5V", "C": "Salud publica 10V"},
+  {"key": "public_education", "name": "Bienestar Educacion", "A": "Educacion publica gratuita", "B": "Educacion publica 5V", "C": "Educacion publica 10V"},
+  {"key": "foreign_trade", "name": "Comercio Exterior", "A": "Aranceles altos", "B": "Comercio regulado", "C": "Importaciones baratas"},
+  {"key": "immigration", "name": "Inmigracion", "A": "Cerrada", "B": "Moderada", "C": "Abierta"}
+]
+

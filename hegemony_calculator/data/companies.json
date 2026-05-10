@@ -1,0 +1,11 @@
+[
+  {"id": "farm_1", "name": "Cooperativa Agricola", "industry": "Agricultura", "owner": "Middle Class", "slots": 3, "output": "food", "amount": 2},
+  {"id": "farm_2", "name": "Agroholding Verde", "industry": "Agricultura", "owner": "Capitalist Class", "slots": 4, "output": "food", "amount": 3},
+  {"id": "clinic_1", "name": "Clinica Publica", "industry": "Salud", "owner": "The State", "slots": 3, "output": "health", "amount": 2},
+  {"id": "school_1", "name": "Instituto Publico", "industry": "Educacion", "owner": "The State", "slots": 3, "output": "education", "amount": 2},
+  {"id": "media_1", "name": "Canal Popular", "industry": "Media", "owner": "Middle Class", "slots": 2, "output": "influence", "amount": 1},
+  {"id": "lux_1", "name": "Distrito de Ocio", "industry": "Ocio", "owner": "Capitalist Class", "slots": 3, "output": "luxury", "amount": 2},
+  {"id": "hospital_2", "name": "Hospital Regional", "industry": "Salud", "owner": "The State", "slots": 4, "output": "health", "amount": 3},
+  {"id": "academy_2", "name": "Academia Tecnica", "industry": "Educacion", "owner": "Middle Class", "slots": 2, "output": "education", "amount": 2}
+]
+
