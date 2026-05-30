@@ -1,69 +1,84 @@
-# Security Policy | Politica de Seguridad
-
-**[Espanol](#espanol) | [English](#english)**
+# 🔒 Política de Seguridad / Security Policy
 
 ---
 
-<h2 id="espanol">Espanol</h2>
+# 🇪🇸 Español
 
-## Versiones soportadas
+## Versiones Soportadas
 
-| Version | Estado |
+| Versión | Estado |
 |---|---|
 | `main` | Soportada |
 | Releases anteriores | Mejor esfuerzo |
 
-## Reportar una vulnerabilidad
+## Reportar una Vulnerabilidad
 
-Si encuentras una vulnerabilidad, no abras un issue publico. Reportala de forma privada al propietario del repositorio o mediante una GitHub Security Advisory privada.
+Si encuentras una vulnerabilidad en **Hegemony Linear**, **no abras un issue público**. Reporta el problema de forma privada al propietario del repositorio o mediante una GitHub Security Advisory privada.
 
 Incluye, si es posible:
 
-- Descripcion del problema.
-- Pasos para reproducir.
+- Descripción clara del problema.
+- Pasos para reproducirlo.
 - Impacto estimado.
-- Evidencia tecnica, capturas o payloads de prueba.
+- Evidencia técnica, capturas o payloads de prueba.
+- Entorno donde ocurrió el problema.
 
 ## Alcance
 
-Son reportes validos:
+Son reportes válidos:
 
-- Errores de CORS o exposicion no intencional de origenes.
-- Validacion insuficiente de payloads en la API.
-- Divulgacion de secretos o variables de entorno.
-- Dependencias vulnerables con impacto ejecutable.
+- Errores de CORS o exposición no intencional de orígenes.
+- Validación insuficiente de payloads en la API FastAPI.
+- Exposición de secretos, tokens o variables de entorno.
+- Dependencias vulnerables con impacto real.
+- Fallos que permitan alterar resultados del motor numérico fuera de las validaciones esperadas.
 
-No publiques datos sensibles, tokens, credenciales ni informacion personal en issues o Pull Requests.
+## Fuera de Alcance
+
+- Reportes sin pasos de reproducción.
+- Vulnerabilidades en servicios externos no controlados por este repositorio.
+- Problemas derivados de configuraciones locales inseguras fuera del proyecto.
+
+No publiques datos sensibles, tokens, credenciales ni información personal en issues, Pull Requests o comentarios públicos.
 
 ---
+---
 
-<h2 id="english">English</h2>
+# 🇺🇸 English
 
-## Supported versions
+## Supported Versions
 
 | Version | Status |
 |---|---|
 | `main` | Supported |
 | Older releases | Best effort |
 
-## Reporting a vulnerability
+## Reporting a Vulnerability
 
-If you find a vulnerability, do not open a public issue. Report it privately to the repository owner or through a private GitHub Security Advisory.
+If you find a vulnerability in **Hegemony Linear**, **do not open a public issue**. Report it privately to the repository owner or through a private GitHub Security Advisory.
 
 Include, when possible:
 
-- Problem description.
+- Clear problem description.
 - Reproduction steps.
 - Estimated impact.
 - Technical evidence, screenshots or test payloads.
+- Environment where the issue occurred.
 
 ## Scope
 
 Valid reports include:
 
 - CORS mistakes or unintended origin exposure.
-- Insufficient API payload validation.
-- Secret or environment variable disclosure.
-- Vulnerable dependencies with executable impact.
+- Insufficient payload validation in the FastAPI backend.
+- Exposure of secrets, tokens or environment variables.
+- Vulnerable dependencies with real impact.
+- Failures that allow numerical engine results to be altered outside expected validation rules.
 
-Do not publish sensitive data, tokens, credentials or personal information in issues or Pull Requests.
+## Out of Scope
+
+- Reports without reproduction steps.
+- Vulnerabilities in external services not controlled by this repository.
+- Issues caused by insecure local configurations outside the project.
+
+Do not publish sensitive data, tokens, credentials or personal information in issues, Pull Requests or public comments.

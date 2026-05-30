@@ -1,25 +1,37 @@
-# Changelog
+# 📦 Changelog
 
-All notable changes to this project are documented here.
+Todos los cambios relevantes de **Hegemony Linear** se documentan en este archivo.
 
-## [1.0.0] - 2026-05-30
+---
 
-### Added
+## [v1.0.0] - 2026-05-30
 
-- Public Vercel frontend deployment.
-- Public Render FastAPI deployment.
-- README gallery with live screenshots.
-- Bilingual open source documentation: contributing, code of conduct and security policy.
-- GitHub repository setup guide for About, topics, releases and deployments.
+### 🚀 Lanzamiento Oficial
 
-### Changed
+Primera versión estable del simulador web **Hegemony Linear**, desarrollado como proyecto académico de **Análisis Numérico (UPB)**. Esta versión consolida la experiencia hotseat, el frontend React/Vite, el backend FastAPI y el motor Newton-Raphson para calcular el ingreso mínimo necesario de la Clase Trabajadora.
 
-- Reworked README for portfolio and open source presentation.
-- Updated frontend environment example to point to the production API.
-- Simplified Python dependencies to the FastAPI API and numerical engine.
+### ✨ Añadido
 
-### Removed
+- Frontend público desplegado en Vercel: https://hegemony-linear.vercel.app/.
+- Backend FastAPI público desplegado en Render: https://hegemony-fastapi-backend.onrender.com/.
+- Documentación interactiva de API con Swagger UI.
+- Motor numérico con Newton-Raphson expuesto en `POST /api/calculate-income`.
+- Modo profesor con raíz calculada, error final, convergencia e iteraciones.
+- README bilingüe con capturas reales del despliegue.
+- Documentación Open Source: MIT License, Code of Conduct, Contributing y Security Policy.
+- Plantillas de Issues y Pull Requests para GitHub.
 
-- Legacy local UI implementation that is no longer part of the deployed product.
-- Tracked Python cache artifacts.
-- Unused Netlify deployment configuration.
+### 🛠️ Cambiado
+
+- Reestructuración del README para presentación de portafolio y publicación Open Source.
+- Actualización de `frontend/.env.example` para apuntar al backend productivo.
+- Optimización del build Vite separando chunks de gráficas e iconografía.
+- Ajuste de `pytest.ini` para usar caché local del repositorio.
+- Limpieza de dependencias Python enfocadas en FastAPI y el motor numérico.
+
+### 🧹 Eliminado
+
+- UI legacy local que ya no forma parte del producto desplegado.
+- Configuración de Netlify no utilizada.
+- Artefactos `__pycache__` previamente versionados.
+- Documentación interna de configuración de GitHub que no debía publicarse.

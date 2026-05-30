@@ -1,8 +1,8 @@
 <div align="center">
 
-# Hegemony Linear
+# 🎲 Hegemony Linear
 
-**Hotseat web simulator with a FastAPI numerical engine for Newton-Raphson income analysis.**
+**Simulador web hotseat de economía política para Análisis Numérico (UPB), construido con React, FastAPI y un motor Newton-Raphson para calcular el ingreso mínimo de prosperidad de la Clase Trabajadora.**
 
 [![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Vite-7-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vite.dev/)
@@ -11,125 +11,134 @@
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-[Live app](https://hegemony-linear.vercel.app/) |
-[API](https://hegemony-fastapi-backend.onrender.com/) |
-[API docs](https://hegemony-fastapi-backend.onrender.com/docs)
+[🌐 Aplicación](https://hegemony-linear.vercel.app/) ·
+[⚙️ API](https://hegemony-fastapi-backend.onrender.com/) ·
+[📘 Swagger Docs](https://hegemony-fastapi-backend.onrender.com/docs)
 
 </div>
 
 ---
 
-**[Espanol](#espanol) | [English](#english)**
+<p align="center">
+  <a href="#-español">Español</a> · <a href="#-english">English</a>
+</p>
 
 ---
 
-## Gallery
+## 🖼️ Galería / Showcase
 
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="docs/assets/hegemony-linear-dashboard.png" alt="Hegemony Linear dashboard" width="100%"/>
-      <br/><strong>Hotseat game board</strong>
+      <img src="docs/assets/hegemony-linear-dashboard.png" alt="Tablero principal de Hegemony Linear" width="100%"/>
+      <br/><strong>Tablero hotseat multijugador</strong>
     </td>
     <td align="center" width="50%">
-      <img src="docs/assets/hegemony-linear-result.png" alt="Newton-Raphson result modal" width="100%"/>
-      <br/><strong>Narrative result from the numerical engine</strong>
+      <img src="docs/assets/hegemony-linear-result.png" alt="Resultado narrativo del cálculo Newton-Raphson" width="100%"/>
+      <br/><strong>Resultado narrativo del motor numérico</strong>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="docs/assets/hegemony-linear-teacher-panel.png" alt="Teacher panel with Newton-Raphson convergence" width="100%"/>
-      <br/><strong>Teacher mode: convergence chart and iteration table</strong>
+      <img src="docs/assets/hegemony-linear-teacher-panel.png" alt="Panel docente con convergencia Newton-Raphson" width="100%"/>
+      <br/><strong>Modo profesor: raíz, error, convergencia e iteraciones</strong>
     </td>
   </tr>
 </table>
 
 ---
 
-<h2 id="espanol">Espanol</h2>
+# 🇪🇸 Español
 
-## Acerca del proyecto
+## 📌 Acerca del Proyecto
 
-**Hegemony Linear** es una adaptacion web academica tipo hotseat inspirada en *Hegemony: Lead Your Class to Victory*. El objetivo no es clonar el juego de mesa, sino convertir sus tensiones economicas en una experiencia interactiva donde un motor numerico calcula el ingreso minimo que necesita la Clase Trabajadora para alcanzar una meta de prosperidad.
+**Hegemony Linear** es una adaptación web académica tipo **hotseat** inspirada en *Hegemony: Lead Your Class to Victory*. Fue desarrollado para la materia de **Análisis Numérico** en la **Universidad Pontificia Bolivariana (UPB)**, integrando simulación económica, experiencia interactiva y métodos numéricos aplicados.
 
-El backend resuelve la raiz de `f(I) = W(I) - S*` con **Newton-Raphson**. El jugador no interactua con la ecuacion directamente: ve decisiones de salarios, impuestos, bienes y politicas; el sistema traduce el resultado matematico a consecuencias de juego.
+El objetivo del proyecto es demostrar cómo un método de búsqueda de raíces puede funcionar dentro de una experiencia de juego: la Clase Trabajadora, la Clase Capitalista, la Clase Media y el Estado toman decisiones sobre salarios, impuestos, bienes y políticas públicas; luego, el backend calcula el ingreso mínimo necesario para alcanzar una meta de prosperidad.
 
-> Proyecto academico y de portafolio. No esta afiliado ni respaldado por los titulares del juego de mesa original.
+El modelo numérico resuelve:
 
-## Funcionalidades principales
+```text
+f(I) = W(I) - S*
+```
 
-- Simulador hotseat para Clase Trabajadora, Clase Capitalista, Clase Media y Estado.
-- Tablero de rondas con politicas fiscales, precios de bienes y asignacion de obreros.
-- Calculo de ingreso minimo requerido mediante API FastAPI.
-- Modal narrativo que explica si los salarios actuales cubren la meta de prosperidad.
-- Modo profesor con raiz calculada, error final, grafica de convergencia y tabla de iteraciones.
-- Frontend desplegado en Vercel y backend desplegado en Render.
-- Suite de pruebas para metodos numericos, bienestar, impuestos, validador y motor de juego.
+Donde `I` es el ingreso bruto, `W(I)` es el bienestar calculado y `S*` es la meta de prosperidad. El jugador no ve la ecuación como una calculadora aislada: la aplicación traduce el resultado a una consecuencia política y económica dentro del tablero.
 
-## Arquitectura
+> Proyecto académico y de portafolio. No está afiliado ni respaldado por los titulares del juego de mesa original.
+
+## 🚀 Funcionalidades Principales
+
+- **Simulación hotseat multiclase:** Clase Trabajadora, Clase Capitalista, Clase Media y Estado.
+- **Tablero económico interactivo:** rondas, salarios, impuestos, precios de bienes y asignación de obreros.
+- **Motor numérico real:** cálculo de ingreso mínimo con Newton-Raphson desde una API FastAPI.
+- **Narrativa de juego:** el resultado matemático se presenta como negociación económica, no como fórmula suelta.
+- **Modo profesor:** raíz calculada, error final, tabla de iteraciones y gráfica de convergencia.
+- **Despliegue público:** frontend en Vercel y backend en Render.
+- **Pruebas automatizadas:** cobertura del motor numérico, bienestar, impuestos, validación y lógica de juego.
+
+## 🏗️ Arquitectura del Sistema
 
 ```mermaid
 graph TD
-    A["Usuario hotseat"] --> B["Frontend React + Vite"]
-    B --> C["FastAPI REST API"]
-    C --> D["hegemony_calculator"]
-    D --> E["Dominio: bienestar y parametros"]
-    D --> F["Metodos numericos"]
+    A["Usuario Hotseat"] --> B["Frontend React + Vite"]
+    B -->|"POST /api/calculate-income"| C["Backend FastAPI"]
+    C --> D["Motor hegemony_calculator"]
+    D --> E["Dominio: bienestar, impuestos y parámetros"]
+    D --> F["Métodos numéricos"]
     F --> G["Newton-Raphson"]
-    F --> H["Biseccion, secante, punto fijo y falsa posicion"]
-    C --> I["Render backend"]
-    B --> J["Vercel frontend"]
+    F --> H["Bisección, Secante, Punto Fijo y Falsa Posición"]
+    B --> I["Vercel"]
+    C --> J["Render"]
 ```
 
-## Stack tecnologico
+## 🛠️ Stack Tecnológico
 
-| Capa | Tecnologia |
+| Capa | Tecnología |
 |---|---|
-| Frontend | React 19, Vite 7, Tailwind CSS, Recharts, Lucide React |
-| Backend | FastAPI, Pydantic, Uvicorn |
-| Motor numerico | Python, Newton-Raphson, busqueda de raices |
-| Analisis | NumPy, Pandas |
-| Testing | Pytest, Vite build |
-| Deploy | Vercel para frontend, Render para backend |
+| **Frontend** | React 19, Vite 7, Tailwind CSS, Recharts, Lucide React |
+| **Backend** | FastAPI, Pydantic, Uvicorn |
+| **Motor Numérico** | Python, Newton-Raphson, búsqueda de raíces |
+| **Análisis** | NumPy, Pandas |
+| **Testing** | Pytest, Vite Build |
+| **Deploy** | Vercel (frontend), Render (backend) |
 
-## Estructura del proyecto
+## 📁 Estructura del Proyecto
 
 ```text
 Hegemony-Linear/
-|-- backend/                         # API FastAPI
-|   |-- main.py
-|-- frontend/                        # Aplicacion React/Vite
-|   |-- src/
-|   |   |-- App.jsx
-|   |   |-- index.css
-|   |   `-- main.jsx
-|   |-- package.json
-|   `-- vercel.json
-|-- hegemony_calculator/             # Dominio, metodos numericos y motor
-|   |-- core/
-|   |-- engine/
-|   |-- services/
-|   `-- data/
-|-- tests/                           # Pruebas Pytest
-|-- docs/
-|   |-- assets/                      # Capturas del README
-|   |-- deployment.md
-|   |-- github-repository-setup.md
-|   `-- usage-guide.md
-|-- render.yaml
-|-- requirements.txt
-`-- README.md
+├── backend/                         # API FastAPI
+│   └── main.py
+├── frontend/                        # Aplicación React/Vite
+│   ├── src/
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── package.json
+│   └── vercel.json
+├── hegemony_calculator/             # Dominio, motor y métodos numéricos
+│   ├── core/
+│   ├── engine/
+│   ├── services/
+│   └── data/
+├── tests/                           # Pruebas Pytest
+├── docs/
+│   ├── assets/                      # Capturas del README
+│   ├── deployment.md
+│   └── usage-guide.md
+├── render.yaml
+├── requirements.txt
+└── README.md
 ```
 
-## Inicio rapido
+## ⚡ Inicio Rápido
 
 ### Prerrequisitos
 
-- Python 3.11 o superior.
-- Node.js 24.14.0 usando `fnm`.
-- PowerShell en Windows.
+- **Python 3.11+**
+- **Node.js 24.14.0** usando `fnm`
+- **PowerShell** en Windows
 
-### Backend local
+### Backend Local
 
 ```powershell
 cd D:\Desarrollo\Proyectos\UPB\Hegemony-Linear
@@ -140,15 +149,13 @@ python -m pip install -r requirements.txt
 python -m uvicorn backend.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Servicios locales:
-
 | Servicio | URL |
 |---|---|
 | API | `http://127.0.0.1:8000` |
 | Swagger UI | `http://127.0.0.1:8000/docs` |
-| Health check | `http://127.0.0.1:8000/api/health` |
+| Health Check | `http://127.0.0.1:8000/api/health` |
 
-### Frontend local
+### Frontend Local
 
 ```powershell
 cd D:\Desarrollo\Proyectos\UPB\Hegemony-Linear\frontend
@@ -158,22 +165,26 @@ Copy-Item .env.example .env
 npm.cmd run dev -- --host 127.0.0.1 --port 5173
 ```
 
-El frontend queda disponible en `http://127.0.0.1:5173`.
+El frontend queda disponible en:
 
-## Variables de entorno
+```text
+http://127.0.0.1:5173
+```
 
-| Archivo | Variable | Descripcion |
+## 🔐 Variables de Entorno
+
+| Archivo | Variable | Descripción |
 |---|---|---|
-| `frontend/.env` | `VITE_API_URL` | URL base del backend FastAPI. En local usa `http://127.0.0.1:8000`; en produccion usa Render. |
+| `frontend/.env` | `VITE_API_URL` | URL base del backend FastAPI. En local usa `http://127.0.0.1:8000`; en producción usa Render. |
 
-## API principal
+## 📡 API Principal
 
 ```http
 POST /api/calculate-income
 Content-Type: application/json
 ```
 
-Ejemplo minimo:
+Ejemplo mínimo:
 
 ```json
 {
@@ -189,7 +200,7 @@ Ejemplo minimo:
 
 La respuesta incluye `I_star`, `required_income`, `converged`, `iterations`, `final_error`, `history` y una narrativa lista para el tablero.
 
-## Pruebas y verificacion
+## 🧪 Pruebas y Verificación
 
 ```powershell
 cd D:\Desarrollo\Proyectos\UPB\Hegemony-Linear
@@ -200,46 +211,51 @@ fnm use 24.14.0
 npm.cmd run build
 ```
 
-## Documentacion
+## 📚 Documentación
 
-| Documento | Proposito |
+| Documento | Propósito |
 |---|---|
-| [docs/README.md](docs/README.md) | Indice documental del proyecto. |
-| [docs/deployment.md](docs/deployment.md) | Guia de despliegue Vercel + Render. |
-| [docs/usage-guide.md](docs/usage-guide.md) | Guia de uso, demo y video de sustentacion. |
-| [docs/github-repository-setup.md](docs/github-repository-setup.md) | Recomendaciones para About, topics, releases y deployments en GitHub. |
-| [CONTRIBUTING.md](CONTRIBUTING.md) | Flujo de contribucion. |
-| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Codigo de conducta. |
+| [docs/README.md](docs/README.md) | Índice documental del proyecto. |
+| [docs/deployment.md](docs/deployment.md) | Guía de despliegue en Vercel + Render. |
+| [docs/usage-guide.md](docs/usage-guide.md) | Guía de uso, demo y video de sustentación. |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Flujo de contribución. |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Código de conducta. |
 | [SECURITY.md](SECURITY.md) | Reporte responsable de vulnerabilidades. |
 | [CHANGELOG.md](CHANGELOG.md) | Registro de cambios. |
 
-## Contribucion, seguridad y licencia
+## 🤝 Contribución
 
-Las contribuciones son bienvenidas bajo el flujo descrito en [CONTRIBUTING.md](CONTRIBUTING.md). Para vulnerabilidades, no abras issues publicos: sigue [SECURITY.md](SECURITY.md). El proyecto esta licenciado bajo [MIT](LICENSE).
+Las contribuciones son bienvenidas. Consulta la [Guía de Contribución](CONTRIBUTING.md) para conocer el flujo de trabajo, estilo de commits y verificación esperada.
+
+## 🔒 Seguridad
+
+Si descubres una vulnerabilidad, **no abras un issue público**. Sigue el proceso descrito en [SECURITY.md](SECURITY.md).
+
+## 📄 Licencia
+
+Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
 ---
 
-<h2 id="english">English</h2>
+# 🇺🇸 English
 
-## About
+## 📌 About the Project
 
-**Hegemony Linear** is an academic hotseat web simulation inspired by *Hegemony: Lead Your Class to Victory*. It turns economic decisions into an interactive board where a numerical backend calculates the minimum income required for the Working Class to reach a prosperity target.
+**Hegemony Linear** is an academic **hotseat** web adaptation inspired by *Hegemony: Lead Your Class to Victory*. It was developed for the **Numerical Analysis** course at **Universidad Pontificia Bolivariana (UPB)**, combining economic simulation, interactive UX and applied numerical methods.
 
-The backend solves `f(I) = W(I) - S*` with **Newton-Raphson**. The player sees wages, taxes, goods and policy outcomes; the teacher panel exposes the convergence details for academic review.
+The project demonstrates how a root-finding method can live inside a game-like experience: the Working Class, Capitalist Class, Middle Class and State make decisions about wages, taxes, goods and policies; then the backend calculates the minimum income required to reach a prosperity target.
 
-> Academic and portfolio project. It is not affiliated with or endorsed by the owners of the original board game.
+## 🚀 Key Features
 
-## Key features
+- **Multi-class hotseat simulation:** Working Class, Capitalist Class, Middle Class and State.
+- **Interactive economic board:** rounds, wages, taxes, goods prices and worker allocation.
+- **Real numerical engine:** minimum income calculation with Newton-Raphson through FastAPI.
+- **Game narrative:** mathematical results are presented as economic negotiation outcomes.
+- **Teacher mode:** calculated root, final error, iteration table and convergence chart.
+- **Public deployment:** frontend on Vercel and backend on Render.
+- **Automated tests:** numerical methods, welfare, taxes, validation and game-engine behavior.
 
-- Hotseat simulator for Working Class, Capitalist Class, Middle Class and State turns.
-- Board state with fiscal policy, public goods, wages and worker allocation.
-- Minimum required income calculation through a FastAPI backend.
-- Narrative result modal that explains whether current wages meet the prosperity target.
-- Teacher mode with root, final error, convergence chart and iteration table.
-- Production frontend on Vercel and backend on Render.
-- Pytest suite for numerical methods, welfare, taxes, validation and game engine behavior.
-
-## Quick start
+## ⚡ Quick Start
 
 ```powershell
 cd D:\Desarrollo\Proyectos\UPB\Hegemony-Linear
@@ -258,7 +274,7 @@ Copy-Item .env.example .env
 npm.cmd run dev -- --host 127.0.0.1 --port 5173
 ```
 
-## Testing
+## 🧪 Testing
 
 ```powershell
 cd D:\Desarrollo\Proyectos\UPB\Hegemony-Linear
@@ -269,14 +285,14 @@ fnm use 24.14.0
 npm.cmd run build
 ```
 
-## Production
+## 🌐 Production
 
 | Service | Provider | URL |
 |---|---|---|
 | Frontend | Vercel | https://hegemony-linear.vercel.app/ |
 | Backend API | Render | https://hegemony-fastapi-backend.onrender.com/ |
-| API docs | Render / Swagger UI | https://hegemony-fastapi-backend.onrender.com/docs |
+| API Docs | Render / Swagger UI | https://hegemony-fastapi-backend.onrender.com/docs |
 
-## License
+## 📄 License
 
 Released under the [MIT License](LICENSE).

@@ -1,12 +1,10 @@
-# Deployment Guide | Guia de Despliegue
-
-**[Espanol](#espanol) | [English](#english)**
+# 🚀 Guía de Despliegue / Deployment Guide
 
 ---
 
-<h2 id="espanol">Espanol</h2>
+# 🇪🇸 Español
 
-## Arquitectura de despliegue
+## Arquitectura de Despliegue
 
 | Servicio | Proveedor | URL |
 |---|---|---|
@@ -16,7 +14,7 @@
 
 ## Backend en Render
 
-Configuracion recomendada:
+Configuración recomendada:
 
 ```text
 Name: hegemony-fastapi-backend
@@ -26,7 +24,7 @@ Build Command: python -m pip install -r requirements.txt
 Start Command: python -m uvicorn backend.main:app --host 0.0.0.0 --port $PORT
 ```
 
-`render.yaml` ya contiene esta configuracion:
+El archivo `render.yaml` ya contiene esta configuración:
 
 ```yaml
 services:
@@ -41,7 +39,7 @@ services:
         value: 3.11.9
 ```
 
-Checks de produccion:
+Checks de producción:
 
 ```text
 https://hegemony-fastapi-backend.onrender.com/
@@ -51,7 +49,7 @@ https://hegemony-fastapi-backend.onrender.com/docs
 
 ## Frontend en Vercel
 
-Configuracion recomendada:
+Configuración recomendada:
 
 ```text
 Root Directory: frontend
@@ -66,22 +64,23 @@ Variable de entorno:
 VITE_API_URL=https://hegemony-fastapi-backend.onrender.com
 ```
 
-`frontend/vercel.json` mantiene el fallback SPA para que las rutas internas respondan desde `index.html`.
+`frontend/vercel.json` mantiene el fallback de SPA para que las rutas internas respondan desde `index.html`.
 
-## Troubleshooting
+## Problemas Comunes
 
-| Sintoma | Revision |
+| Síntoma | Revisión |
 |---|---|
 | La app abre pero no calcula | Verifica `VITE_API_URL` en Vercel. |
-| La primera respuesta del backend tarda | Render Free puede dormir el servicio despues de inactividad. |
-| Error de CORS | Confirma que el origen de Vercel esta en `backend/main.py`. |
+| La primera respuesta del backend tarda | Render Free puede dormir el servicio después de inactividad. |
+| Error de CORS | Confirma que el origen de Vercel esté permitido en `backend/main.py`. |
 | Vercel no encuentra el build | Confirma que `Root Directory` sea `frontend`. |
 
 ---
+---
 
-<h2 id="english">English</h2>
+# 🇺🇸 English
 
-## Deployment architecture
+## Deployment Architecture
 
 | Service | Provider | URL |
 |---|---|---|

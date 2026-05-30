@@ -1,29 +1,26 @@
-# Documentation | Documentacion
-
-**[Espanol](#espanol) | [English](#english)**
+# 📚 Documentación / Documentation
 
 ---
 
-<h2 id="espanol">Espanol</h2>
+# 🇪🇸 Español
 
-Este directorio contiene la documentacion complementaria de **Hegemony Linear**.
+Este directorio contiene la documentación complementaria de **Hegemony Linear**.
 
-| Documento | Descripcion |
+| Documento | Descripción |
 |---|---|
-| [deployment.md](deployment.md) | Despliegue del backend en Render y del frontend en Vercel. |
-| [usage-guide.md](usage-guide.md) | Guia de uso, demo y estructura sugerida para video. |
-| [github-repository-setup.md](github-repository-setup.md) | Texto recomendado para About, Website, Topics, Releases y Deployments en GitHub. |
-| [assets/](assets/) | Capturas reales usadas por el README. |
+| [deployment.md](deployment.md) | Guía de despliegue del backend en Render y del frontend en Vercel. |
+| [usage-guide.md](usage-guide.md) | Guía de uso, flujo de demo y estructura sugerida para video de sustentación. |
+| [assets/](assets/) | Capturas reales utilizadas en el README principal. |
 
 ---
+---
 
-<h2 id="english">English</h2>
+# 🇺🇸 English
 
 This directory contains the supporting documentation for **Hegemony Linear**.
 
 | Document | Description |
 |---|---|
-| [deployment.md](deployment.md) | Backend deployment on Render and frontend deployment on Vercel. |
-| [usage-guide.md](usage-guide.md) | Usage guide, demo flow and suggested video outline. |
-| [github-repository-setup.md](github-repository-setup.md) | Recommended GitHub About, Website, Topics, Releases and Deployments text. |
-| [assets/](assets/) | Real screenshots used by the README. |
+| [deployment.md](deployment.md) | Deployment guide for the Render backend and Vercel frontend. |
+| [usage-guide.md](usage-guide.md) | Usage guide, demo flow and suggested presentation video outline. |
+| [assets/](assets/) | Real screenshots used in the main README. |
