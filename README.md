@@ -216,6 +216,7 @@ npm.cmd run build
 | Documento | Propósito |
 |---|---|
 | [docs/README.md](docs/README.md) | Índice documental del proyecto. |
+| [LEARN.md](LEARN.md) | Guía educativa para GitHub Education y estudiantes de Análisis Numérico. |
 | [docs/deployment.md](docs/deployment.md) | Guía de despliegue en Vercel + Render. |
 | [docs/usage-guide.md](docs/usage-guide.md) | Guía de uso, demo y video de sustentación. |
 | [CONTRIBUTING.md](CONTRIBUTING.md) | Flujo de contribución. |
