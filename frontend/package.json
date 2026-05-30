@@ -2,6 +2,8 @@
   "name": "hegemony-numerical-dashboard",
   "version": "1.0.0",
   "private": true,
+  "description": "React/Vite frontend for the Hegemony Linear numerical hotseat simulator.",
+  "license": "MIT",
   "type": "module",
   "scripts": {
     "dev": "vite",

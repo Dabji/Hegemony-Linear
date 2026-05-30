@@ -1,9 +1,24 @@
+# Node / frontend
 frontend/node_modules/
 frontend/dist/
+frontend/.env
+npm-debug.log*
 
+# Python
 __pycache__/
 *.py[cod]
-
 .pytest_cache/
 .venv/
 venv/
+htmlcov/
+.coverage
+
+# Local environment
+.env
+*.log
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
